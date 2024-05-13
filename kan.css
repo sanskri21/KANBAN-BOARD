@@ -1,0 +1,96 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f0f0f0;
+}
+
+.board {
+    display: flex;
+    justify-content: space-between;
+}
+
+.column {
+    flex: 1;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-right: 20px;
+}
+
+h3 {
+    margin-top: 0;
+    font-size: 18px;
+    color: #333;
+}
+CENTER{
+    font-family:serif;
+    font:bold;
+    margin-top: 0;
+    font-size: 50px;
+    color: #000000;
+
+}
+
+.tasks {
+    min-height: 100px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    margin-top: 10px;
+    overflow-y: auto;
+}
+
+.tasks div {
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 3px;
+    margin-bottom: 5px;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+}
+
+.tasks div:hover {
+    background-color: #f0f0f0;
+}
+
+form {
+    margin-top: 10px;
+}
+
+input[type="text"] {
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+}
+
+button {
+    padding: 8px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+#done-tasks{
+    background-color: rgb(234, 234, 70);
+}
+#testing-tasks{
+    background-color: cornflowerblue;
+}
+#progress-tasks{
+    background-color: cadetblue;
+}
+#todo-tasks{
+    background-color: bisque;
+}
+.task:hover {
+    cursor: pointer;
+}

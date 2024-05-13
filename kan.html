@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kanban Board</title>
+    <link rel="stylesheet" href="kan.css">
+</head>
+<body>
+    <center>KANBAN BOARD</center>
+    <div class="board">
+        <div class="column" id="todo-column">
+            <h3>To Do</h3>
+            <div class="tasks" id="todo-tasks"></div>
+            <form id="addTaskForm" onsubmit="addTask(event)">
+                <input type="text" id="taskInput" placeholder="Enter task...">
+                <button type="submit">Add Task</button>
+            </form>
+        </div>
+        <div class="column" id="progress-column">
+            <h3>In Progress</h3>
+            <div class="tasks" id="progress-tasks"></div>
+        </div>
+        <div class="column" id="testing-column">
+            <h3>Testing</h3>
+            <div class="tasks" id="testing-tasks"></div>
+        </div>
+        <div class="column" id="done-column">
+            <h3>Done</h3>
+            <div class="tasks" id="done-tasks"></div>
+        </div>
+    </div>
+
+    <script src="kan.js"></script>
+</body>
+</html>
